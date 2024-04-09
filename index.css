@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+
+/* for desktop view */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: hsl(30, 54%, 90%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Young Serif" "Outfit";
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 100px 300px;
+        padding: 30px;
+    }
+
+    .main {
+        position: relative;
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+    }
+
+    .image {
+        width: auto;
+        display: block;
+
+    }
+
+    .image img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom:10px;
+    }
+
+    .nutrition{
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td{
+        padding: 10px;
+    }
+
+     tr {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    .simple{
+        padding:10px 0;
+    }
+
+    p{
+        font-size: 16px;
+        color:hsl(26, 3%, 56%);
+    }
+
+    h2{
+       color: hsl(24, 5%, 18%);
+       padding-bottom: 10px;
+    }
+
+   .preparation{
+    background-color: hsl(330, 100%, 98%);
+    border-radius:5px;
+    padding:10px;
+    margin:10px 0;
+   }
+
+   .preparation h4{
+    color:hsl(332, 51%, 32%);
+    padding-bottom: 10px;
+   }
+
+   ul{
+    list-style-position: inside ;
+    color:hsl(26, 3%, 56%);
+    line-height: 25px;
+    font-size: 16px;
+   }
+
+   .ingredient{
+    margin:10px 0;
+   }
+
+   .ingredient ul{
+    padding-bottom: 10px;
+   }
+    
+   strong{
+    color:hsl(30, 10%, 34%);
+   }
+
+   h3{
+    color:hsl(14, 45%, 36%);
+    padding-bottom: 10px;
+   }
+
+   .instruction{
+    margin:10px 0;
+   }
+
+   hr{
+    margin-bottom: 10px;
+   }
+
+   ol{
+    list-style-position: inside ;
+    color:hsl(26, 3%, 56%);
+    line-height: 25px;
+    font-size: 16px;
+   }
+
+   .instruction ol{
+    padding-bottom: 10px;
+   }
+
+   .nutrition{
+    margin-top:10px;
+   }
+
+   .nutrition strong{
+    color:hsl(14, 45%, 36%);
+   }
+
+   .nutrition tr{
+    font-size: 16px;
+    color:hsl(26, 3%, 56%);
+   }
+}
+
+
+
+
+
+
+/* for mobile view */
+@media only screen and (max-width: 767px) {
+    body {
+        /* background-color: hsl(30, 54%, 90%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Young Serif" "Outfit";
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0px ;
+        border: 1px solid whitesmoke;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px ;
+        padding: 10px 30px 30px 30px ;
+        width: 100%;
+    }
+
+    .image { 
+        position: relative; 
+        width: auto;
+        margin:  0;
+    }
+
+    .image img {
+        width: 100%;
+        /* border-radius: 10px; */
+        margin: 0px ;
+    }
+
+    .nutrition{
+        position: relative;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td{
+        padding: 10px;
+    }
+
+     tr {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    .simple{
+        padding:10px 0;
+    }
+
+    p{
+        font-size: 16px;
+        color:hsl(26, 3%, 56%);
+    }
+
+    h2{
+       color: hsl(24, 5%, 18%);
+       padding-bottom: 10px;
+    }
+
+   .preparation{
+    position: relative;
+    background-color: hsl(330, 100%, 98%);
+    border-radius:5px;
+    padding:10px;
+    margin:10px 0;
+    width: 100%;
+   }
+
+   .preparation h4{
+    color:hsl(332, 51%, 32%);
+    padding-bottom: 10px;
+   }
+
+   ul{
+    list-style-position: inside ;
+    color:hsl(26, 3%, 56%);
+    line-height: 25px;
+    font-size: 16px;
+   }
+
+   .ingredient{
+    width: 100%;
+    margin:10px 0;
+   }
+
+   .ingredient ul{
+    padding-bottom: 10px;
+   }
+    
+   strong{
+    color:hsl(30, 10%, 34%);
+   }
+
+   h3{
+    color:hsl(14, 45%, 36%);
+    padding-bottom: 10px;
+   }
+
+   .instruction{
+    margin:10px 0;
+   }
+
+   hr{
+    width: 100%;
+    margin-bottom: 10px;
+   }
+
+   ol{
+    list-style-position: inside ;
+    color:hsl(26, 3%, 56%);
+    line-height: 25px;
+    font-size: 16px;
+   }
+
+   .instruction ol{
+    padding-bottom: 10px;
+   }
+
+   .nutrition{
+    width: 100%;
+    margin-top:10px;
+   }
+
+   .nutrition strong{
+    color:hsl(14, 45%, 36%);
+   }
+
+   .nutrition tr{
+    font-size: 16px;
+    color:hsl(26, 3%, 56%);
+   }
+}
